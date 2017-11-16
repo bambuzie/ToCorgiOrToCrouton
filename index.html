@@ -3,6 +3,7 @@
 
   <!-- Include jQuery and jQuery UI -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/sparkle.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
@@ -68,7 +69,40 @@ span {
     </div>
   </div>
   <script>
+  $(document).ready(function() {
+  $("body").sparkle({
+  // accepts a HEX string, or "rainbow" or an array of HEX strings:
+  color: ["#8eedd1","#64e76f","#f1814e","#4f9fa4","#ddca42","#dee7c9","#4f5128","#59f5a9","#9d6bd8","#2fad4d","#0157f0","#5cb5ec","#c2ed24","#3df1e7","#d0fbbf","#89d4c3","#1a5243","#388d4a","#cf4f70","#751d80","#6bed93","#eaa36f","#c11864","#c21f31","#64bb13","#e2dd83","#551eff","#e5d523","#806343","#0548ab","#6c2593","#f82348","#fefd7a","#d3def1","#07efd4","#e202cb","#4c59b6","#f0756a","#c7a707","#4d126e","#b66ec9","#af8e1b","#022997","#958dae","#96bb21","#737bfc","#14a917","#476f64","#454438","#0ca95a","#123de6","#f248b5","#cc52d7","#96ec92","#1b390b","#f6409d","#03780f","#f1dfbd","#109714","#bd2306","#2a1544","#357191","#836cb3","#7bcf3f","#95961e","#2e9ab9","#d11e8d","#b9b97e","#ffb870","#acca82","#0fedbc","#eb5b3c","#f6e32f","#798b90","#17b766","#3cb9f4","#ce36c3","#1d7963","#4a675d","#b3f1c4","#cefff6","#e98af0","#ce8f4f","#2b385b","#f49128","#4d9f3e","#c5f346","#21622d","#68e5c5","#8c89c3","#e20061","#f1a7ca","#21716d","#2d25d7","#f3331c","#67a0d5","#76f95b","#1b8166","#5360c2","#7cd806","#0a86b4","#a76d64","#cab80a","#70d900","#d08ed1","#a3ec64","#974785","#865cae","#67be52","#2279db","#da6ec1","#c47215","#a4e79a","#5f17ee","#1367ba","#1d4f40","#f08716","#11034d","#e97d22","#743c72","#acd759","#5bab5b","#0d0536","#eadc8a","#3e5079","#533d6c","#09b3ba","#1ad46c","#dbb580","#42cbc6","#50f7eb","#250018","#2fe4c2","#4c9520","#082a8b","#b154d3","#1a30a2","#f10cb2","#f8d76c","#eede0e","#c09985","#61e82f","#3271b3","#d56389","#faae59","#8f15f2","#374ab4","#4628c5","#f7f724","#4fa904","#62da69","#a64001","#174585","#fcb1b7","#4696f0","#806661","#a0ce6c","#5873a7","#5dcdae","#caacc6","#cae429","#d3f781","#54deda","#23e5d1","#bf8c7c","#8a4605","#7f923b","#f34041","#fa1193","#2e9f8a","#7bf81a","#fd3af3","#8e97c9","#823b85","#2fc1bd","#f3b1cb","#e1a67a","#9a5553","#a3ef46","#1e361b","#96d953","#ecb11c","#0640d5","#142687","#39e49f","#c1cd70","#a5302c","#28e6da","#3bee04","#67f018","#048760","#5a1f08","#e7c606","#34d62c","#8fd2d3","#784d90","#369253","#dec128","#acfc25","#c97ee3"],
+  // determine how many sparkles will be on the element at a time
+  count: 100,
+  // tell the canvas how far over the edge of it's container it should overlap in pixels.a
+  overlap: 0,
+  // set the speed multiplier
+  speed: .5,
+  // min size
 
+  minSize: 4,
+  // max size
+
+  maxSize: 20,
+  // "up", "down" or "both" to set which direction the sparkles will travel in.
+  direction: "both"
+  });
+
+  });
   </script>
 
+<!--<div class="demo">
+<img id="" src="demo.jpg">
+</div>
+-->
+
+
+
 </body>
+
+<!--
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+2
+<script src="dist/jquery-canvas-sparkles.js"></script>
+-->
