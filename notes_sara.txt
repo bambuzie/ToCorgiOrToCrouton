@@ -1,0 +1,3 @@
+Grabbing jquery from Google APIs, because they host a copy
+
+Google hosts copies of popular JS libraries/frameworks, at https://developers.google.com/speed/libraries/
